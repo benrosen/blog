@@ -6,7 +6,16 @@
     <description>Recent content on Ben&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Dec 2020 20:37:23 -0500</lastBuildDate><atom:link href="https://benrosen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 26 Dec 2020 09:22:31 -0500</lastBuildDate><atom:link href="https://benrosen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Phaser React Tools</title>
+      <link>https://benrosen.github.io/posts/phaser-react-tools/</link>
+      <pubDate>Sat, 26 Dec 2020 09:22:31 -0500</pubDate>
+      
+      <guid>https://benrosen.github.io/posts/phaser-react-tools/</guid>
+      <description>I spend a lot of time at work helping people who are new to game development. There are many excellent options for beginners who are interested in creating games, from Scratch to processing to Unity. These days, one of my favorite ways to make games is with Phaser. Phaser is easy to set up, and it has lots of great examples to work from. Phaser also has plenty of convenient features that make other game engines (looking at you, Unity) seem kind of clunky in comparison.</description>
+    </item>
+    
     <item>
       <title>Pixel Art Chess Pieces</title>
       <link>https://benrosen.github.io/posts/pixel-art-chess-pieces/</link>

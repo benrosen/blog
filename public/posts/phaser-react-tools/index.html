@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Phaser React Tools | Ben&#39;s Blog</title>
+
+<meta name="keywords" content="" />
+<meta name="description" content="I spend a lot of time at work helping people who are new to game development. There are many excellent options for beginners who are interested in creating games, from Scratch to processing to Unity. These days, one of my favorite ways to make games is with Phaser. Phaser is easy to set up, and it has lots of great examples to work from. Phaser also has plenty of convenient features that make other game engines (looking at you, Unity) seem kind of clunky in comparison.">
+<meta name="author" content="">
+<link rel="canonical" href="https://benrosen.github.io/posts/phaser-react-tools/" />
+<link href="https://benrosen.github.io/assets/css/stylesheet.min.d1bc2b736056bd5698d770eeedc08a73bce9e6cebb30810f6f1b2c2048e46ab8.css" integrity="sha256-0bwrc2BWvVaY13Du7cCKc7zp5s67MIEPbxssIEjkarg=" rel="preload stylesheet"
+    as="style">
+
+<link rel="icon" href="https://benrosen.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://benrosen.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://benrosen.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://benrosen.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://benrosen.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.79.1" />
+
+
+<meta property="og:title" content="Phaser React Tools" />
+<meta property="og:description" content="I spend a lot of time at work helping people who are new to game development. There are many excellent options for beginners who are interested in creating games, from Scratch to processing to Unity. These days, one of my favorite ways to make games is with Phaser. Phaser is easy to set up, and it has lots of great examples to work from. Phaser also has plenty of convenient features that make other game engines (looking at you, Unity) seem kind of clunky in comparison." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://benrosen.github.io/posts/phaser-react-tools/" />
+<meta property="og:image" content="https://benrosen.github.io/phaser-react-tools-cover.png" /><meta property="article:published_time" content="2020-12-26T09:22:31-05:00" />
+<meta property="article:modified_time" content="2020-12-26T09:22:31-05:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://benrosen.github.io/phaser-react-tools-cover.png" />
+<meta name="twitter:title" content="Phaser React Tools"/>
+<meta name="twitter:description" content="I spend a lot of time at work helping people who are new to game development. There are many excellent options for beginners who are interested in creating games, from Scratch to processing to Unity. These days, one of my favorite ways to make games is with Phaser. Phaser is easy to set up, and it has lots of great examples to work from. Phaser also has plenty of convenient features that make other game engines (looking at you, Unity) seem kind of clunky in comparison."/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Phaser React Tools",
+  "name": "Phaser React Tools",
+  "description": "I spend a lot of time at work helping people who are new to game development. There are many excellent options for beginners who are interested in creating games, from Scratch to …",
+  "keywords": [
+    
+  ],
+  "articleBody": "I spend a lot of time at work helping people who are new to game development. There are many excellent options for beginners who are interested in creating games, from Scratch to processing to Unity. These days, one of my favorite ways to make games is with Phaser. Phaser is easy to set up, and it has lots of great examples to work from. Phaser also has plenty of convenient features that make other game engines (looking at you, Unity) seem kind of clunky in comparison. And, because Phaser is part of the JavaScript ecosystem, the possibilities for integrating your Phaser game with other frameworks are endless.\nOne thing that I don’t love about Phaser is the system for building user interfaces. It’s not that Phaser’s UI system is bad - it’s just not as good as more mature frameworks for UI development, such as React. Unfortunately, Phaser and React don’t play very nicely together by default. In fact, they are described as oil and water on the Phaser site.\nTo help mitigate the challenge of mixing these two very different frameworks, I’ve published a simple toolkit called phaser-react-tools. The package contains one React component, a context, and some hooks. Using these simple tools, you can embed a Phaser game in your React app, build a React UI overlay for your Phaser game, and send events back and forth between Phaser and React with ease.\nI enjoyed the process of packaging and publishing these tools. I bootstrapped the project with create-react-library, and I used jsdoc, Braintree’s jsdoc-template, and GitHub pages to generate and host the documentation. Testing is made possible by jest.\nThis is the second “module” that I’m releasing as part of my ongoing multiplayer chess project. The first module was a pack of free pixel art chess sprites. The next module will likely be an npx script in the vein of create-react-app for initializing Phaser + React apps.\n",
+  "wordCount" : "320",
+  "inLanguage": "en",
+  "image":"https://benrosen.github.io/phaser-react-tools-cover.png","datePublished": "2020-12-26T09:22:31-05:00",
+  "dateModified": "2020-12-26T09:22:31-05:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://benrosen.github.io/posts/phaser-react-tools/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ben's Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://benrosen.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+
+
+
+</head>
+
+<body class="">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+<noscript>
+    <style type="text/css">
+        .theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://benrosen.github.io" accesskey="h" title="Ben&#39;s Blog (Alt + H)">Ben&#39;s Blog</a>
+            <span class="logo-switches">
+                <span class="theme-toggle" title="(Alt + T)">
+                    <a id="theme-toggle" accesskey="t">
+                        <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                        <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                    </a>
+                </span>
+                
+            </span>
+        </div>
+        <ul class="menu" id="menu" onscroll="menu_on_scroll()"></ul>
+    </nav>
+</header>
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">
+      Phaser React Tools
+    </h1>
+    <div class="post-meta">December 26, 2020
+
+    </div>
+  </header> 
+<figure class="entry-cover"><img src="https://benrosen.github.io/phaser-react-tools-cover.png" alt="">
+        
+</figure>
+
+  <div class="post-content">
+<p>I spend a lot of time at work helping people who are new to game development. There are many excellent options for beginners who are interested in creating games, from <a href="https://scratch.mit.edu/" title="If you think you know how to program, try Scratch.">Scratch</a> to <a href="https://processing.org/" title="Processing">processing</a> to <a href="https://unity.com/" title="Unity">Unity</a>. These days, one of my favorite ways to make games is with <a href="https://phaser.io/phaser3" title="Phaser">Phaser</a>. Phaser is easy to set up, and it has <a href="https://phaser.io/examples" title="Phaser examples">lots of great examples</a> to work from. Phaser also has plenty of convenient features that make other game engines (looking at you, Unity) seem kind of clunky in comparison. And, because Phaser is part of the JavaScript ecosystem, the possibilities for integrating your Phaser game with other frameworks are endless.</p>
+<p>One thing that I <em>don&rsquo;t</em> love about Phaser is the system for building user interfaces. It&rsquo;s not that Phaser&rsquo;s UI system is bad - it&rsquo;s just not as good as more mature frameworks for UI development, such as <a href="https://reactjs.org/" title="React">React</a>. Unfortunately, Phaser and React don&rsquo;t play very nicely together by default. In fact, they are described as <a href="https://phaser.io/news/2019/07/ion-phaser" title="oil and water">oil and water</a> on the Phaser site.</p>
+<p>To help mitigate the challenge of mixing these two very different frameworks, I&rsquo;ve published a simple toolkit called <a href="https://www.npmjs.com/package/phaser-react-tools" title="literally the greatest npm package ever created... probably">phaser-react-tools</a>. The package contains one React component, a context, and some hooks. Using these simple tools, you can embed a Phaser game in your React app, build a React UI overlay for your Phaser game, and send events back and forth between Phaser and React with ease.</p>
+<p>I enjoyed the process of packaging and publishing these tools. I bootstrapped the project with <a href="https://www.npmjs.com/package/create-react-library" title="like create-react-app, but different">create-react-library</a>, and I used <a href="https://jsdoc.app/" title="JavaScript documentation tools">jsdoc</a>, Braintree&rsquo;s <a href="https://github.com/braintree/jsdoc-template" title="a template for jsdoc">jsdoc-template</a>, and <a href="https://pages.github.com/" title="GitHub pages">GitHub pages</a> to generate and host <a href="https://benrosen.github.io/phaser-react-tools/" title="the docs">the documentation</a>. Testing is made possible by <a href="https://jestjs.io/" title="JavaScript testing framework">jest</a>.</p>
+<p>This is the second &ldquo;module&rdquo; that I&rsquo;m releasing as part of my ongoing multiplayer chess project. The first module was a pack of <a href="https://benrosen.github.io/posts/pixel-art-chess-pieces/" title="blog post on pixel art chess pieces">free pixel art chess sprites</a>. The next module will likely be an npx script in the vein of <a href="https://www.npmjs.com/package/create-react-library" title="like create-react-libarary, but different">create-react-app</a> for initializing Phaser + React apps.</p>
+
+</div>
+  <footer class="post-footer">
+  </footer>
+</article>
+    </main><footer class="footer">
+    <span>&copy; 2020 <a href="https://benrosen.github.io">Ben&#39;s Blog</a></span>
+    <span>&middot;</span>
+    <span>Powered by <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a></span>
+    <span>&middot;</span>
+    <span>Theme <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a></span>
+</footer>
+<button class="top-link" id="top-link" type="button" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6">
+        <path d="M12 6H0l6-6z" /></svg>
+</button>
+
+
+
+<script defer src="https://benrosen.github.io/assets/js/highlight.min.27cd435cc9ed6abb4b496581b151804f79f366c412620272bb94e2f5f598ebcc.js" integrity="sha256-J81DXMntartLSWWBsVGAT3nzZsQSYgJyu5Ti9fWY68w="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<script>
+    window.onload = function () {
+        if (localStorage.getItem("menu-scroll-position")) {
+            document.getElementById('menu').scrollLeft = localStorage.getItem("menu-scroll-position");
+        }
+    }
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+    mybutton.onclick = function () {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        window.location.hash = ''
+    }
+
+    function menu_on_scroll() {
+        localStorage.setItem("menu-scroll-position", document.getElementById('menu').scrollLeft);
+    }
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+
+</body>
+
+</html>
