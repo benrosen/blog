@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Ben&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Jan 2021 13:32:50 -0500</lastBuildDate><atom:link href="https://benrosen.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Jan 2021 13:46:35 -0500</lastBuildDate><atom:link href="https://benrosen.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Random Game Ideas</title>
+      <link>https://benrosen.github.io/posts/random-game-ideas/</link>
+      <pubDate>Sat, 09 Jan 2021 13:46:35 -0500</pubDate>
+      
+      <guid>https://benrosen.github.io/posts/random-game-ideas/</guid>
+      <description>I had been interested in making a random game idea generator for a while when I came across sentencer. Sentencer is an npm package that populates madlibs-style templates with random words. Using sentencer and random-color-pair, I was able to quickly throw together a React app generate random game ideas. The app is hosted by AWS Amplify and Route53 at randomideas.link.
+The project is simple to understand. First, a template is chosen randomly from a list.</description>
+    </item>
+    
     <item>
       <title>Random Color Pair</title>
       <link>https://benrosen.github.io/posts/random-color-pair/</link>
