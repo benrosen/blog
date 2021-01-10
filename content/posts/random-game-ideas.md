@@ -6,9 +6,9 @@ cover:
   image: "random-game-ideas-cover.png"
 ---
 
-I had been interested in making a random game idea generator for a while when I came across [sentencer][0]. Sentencer is an npm package that populates madlibs-style templates with random words. Using sentencer and [random-color-pair][1], I was able to quickly throw together a React app generate random game ideas. The app is hosted by AWS Amplify and Route53 at [randomideas.link][2].
+I had been interested in making a random game idea generator for a while when I came across [sentencer][0]. Sentencer is an npm package that populates madlibs-style templates with random words. Using sentencer and [random-color-pair][1], I was able to quickly throw together a React app that could generate random game ideas. The app is hosted by AWS Amplify and Route53 at [randomideas.link][2].
 
-The project is simple to understand. First, a template is chosen randomly from a list. Then, sentencer is used to populate the template with random words. The result is displayed on the screen. Then the user taps on the page, the colors and the idea are regenerated. That's it! The background color and text color pairs are provided by [random-color-pair][1].
+The project is simple to understand. First, a template is chosen randomly from a list. Then, sentencer is used to populate the template with random words. The result is displayed on the screen. When the user taps on the page, the colors and the idea are regenerated. That's it!
 
 This was a fun project; it was quick to come together and it's something I can easily share with my students.
 
